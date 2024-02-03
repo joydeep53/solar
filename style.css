@@ -402,7 +402,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    transition: all .5s linear;
+    transition: all 1s linear !important;
      border: 22px solid rgb(255, 255, 255);
 
 
