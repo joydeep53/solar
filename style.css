@@ -5,6 +5,10 @@
     font-family: 'Poppins', sans-serif;
 
 }
+.btn a{
+    text-decoration: none;
+    color: white;
+}
 .nav{
     height: 140px;
     width: 100%;
@@ -127,7 +131,7 @@
     width: 33.33%;
     background-color: rgba(0, 0, 0, 0.448);
     background-blend-mode: multiply;
-    transition: all 1s;
+    transition: all 1s ease-in-out !important;
     padding-bottom: 50px;
     
     
@@ -152,18 +156,19 @@
     text-align: center;
     color: white;
 }
+
 .sec-one-card-group .one{
     background-image: url(./images/jeroen-van-de-water-aQOzmgcT6sI-unsplash.jpg);
     background-size: 100% 100%;
    
 }
 .sec-one-card-group .two{
-    background-image: url(./images/american-public-power-association-XGAZzyLzn18-unsplash.jpg);
+    background-image: url(./images/solar\ street\ light.png);
     background-size: 100% 100%;
    
 }
 .sec-one-card-group .three{
-    background-image: url(./images/andreas-gucklhorn-Ilpf2eUPpUE-unsplash.jpg);
+    background-image: url(./images/solar\ tree.png);
     background-size: 100% 100%;
    
 }
@@ -195,7 +200,7 @@
     border-bottom: 2px solid rgb(19, 19, 81);
 }
 .section-two-content h2{
-    font-size: 70px;
+    font-size: 40px;
     font-weight: bolder;
 }
 .section-two-content p{
@@ -209,7 +214,7 @@
     height: 50px;
     background-color: rgb(32, 32, 141);
     color: white;
-    font-size: 29px;
+    font-size: 19px;
 }
 
 /* sec-two ends */
@@ -262,11 +267,14 @@
     align-items: center;
    color: rgb(24, 24, 78);
    padding-left: 20px;
-   gap: 5px;
+   gap: 25px;
  
 }
+.sec-three-list li{
+    font-size: 25px;
+}
 .sec-three-img{
-    background-image: url(./images/Capex-model\ img.png);
+    background-image: url(./images/andreas-gucklhorn-Ilpf2eUPpUE-unsplash.jpg);
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -302,6 +310,10 @@
     padding: 20px;
     width: 20%;
     gap: 20px;
+}
+.sec-four-card img{
+    height: 50%;
+    width: 50%;
 }
 .sec-four-card p{
     text-align: center;
@@ -627,6 +639,11 @@
         width: 80%;
         padding: 5px;
     }
+    .sec-one-card:hover{
+        background-color: rgba(0, 0, 0, 0);
+        transform:scale(1.09);
+      
+     }
     /* sec-one ends */
     /* sec-two */
         .sec-two{

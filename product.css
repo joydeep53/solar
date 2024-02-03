@@ -1,0 +1,143 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.product{
+    height: fit-content;
+    width: 100%;
+}
+.product-content{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    gap: 100px;
+    background-color: aliceblue;
+}
+.product-content h2{
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    font-weight: bold;
+    
+}
+
+.product-group{
+    display: flex;
+    height: 450px;
+    width: 100%;
+   
+    justify-content: space-between;
+}
+.tree .product-img{
+    background-image: url(./images/solar\ tree.png);
+    height: 450px;
+    width: 40%;
+    background-size: 100% 100%;
+}
+.product-details{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-evenly;
+}
+.product-details h3{
+    text-align: justify;
+}
+.product-details p{
+    text-align: justify;
+}
+.pump{
+    flex-direction: row-reverse;
+}
+.pump .product-img{
+    background-image: url(./images/solar\ pump.jpg);
+    height: 450px;
+    width: 40%;
+    background-size: 100% 100%;
+}
+.street-light .product-img{
+    background-image: url(./images/solar\ street\ light.png);
+    height: 450px;
+    width: 40%;
+    background-size: 100% 100%;
+}
+.high-must{
+    flex-direction: row-reverse;
+}
+.high-must .product-img{
+    background-image: url(./images/solar-high-mast-street-light.png);
+    height: 450px;
+    width: 40%;
+    background-size: 100% 100%;
+}
+.water-pump .product-img{
+    background-image: url(./images/solarpumpreal.png);
+    height: 450px;
+    width: 40%;
+    background-size: 100% 100%;
+}
+
+@media (max-width:575.98px){
+    .product{
+        height: auto;
+    }
+    .product-content{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: fit-content;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+    .product-group{
+        height: fit-content;
+        width: 100%;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .product-details{
+        width: 100%;
+        gap: 20px;
+    }
+    .product-details h3{
+        font-size: 24px;
+        text-align: justify
+    }
+    .tree .product-img{
+        height: 450px;
+        width: 100%;
+    }
+    .pump .product-img{
+        height: 450px;
+        width: 100%;
+    }
+    .street-light .product-img{
+        height: 450px;
+        width: 100%;
+    }
+    .water-pump .product-img{
+        height: 450px;
+        width: 100%;
+    }
+    .high-must .product-img{
+        height: 450px;
+        width: 100%;
+    }
+
+ 
+
+
+}
