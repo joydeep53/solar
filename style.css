@@ -543,6 +543,9 @@
     .toggle{
         visibility: visible;
     }
+    .btn{
+        font-size: 15px;
+    }
     .nav{
         height: auto;
         position: absolute;
