@@ -1,0 +1,819 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+.nav{
+    height: 140px;
+    width: 100%;
+  
+    
+}
+
+
+.nav-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    height: 140px;
+    width: 100%;
+    /* border: 2px solid red; */
+    padding-left: 0px;
+    padding-right: 50px;
+   
+}
+.nav-content img{
+    height: 100%;
+    width: 150px;
+}
+.nav-bar{
+    display: flex;
+    width: fit-content;
+    height: 140px;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+}
+.nav-links a{
+    font-size: 25px;
+    text-decoration: none !important;
+    padding-bottom: 100px;
+    color: black;
+}
+
+/* banner starts */
+
+.banner{
+    height: 700px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.694);
+    background-image: url(./images/bill-mead-wmaP3Tl80ww-unsplash.jpg);
+    background-size: 100% 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light
+}
+.banner-content{
+    height: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    
+    
+    
+}
+.banner-content h1{
+    width: 70%;
+    color: white;
+    font-size: 50px;
+    text-align: left;
+    padding-right: 50px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.toggle{
+    visibility: hidden;
+    position: absolute;
+    top: 10px;
+    right: 8px;
+    font-size: 50px;
+    color: black;
+    z-index: 3;
+}
+/* sec-one */
+.sec-one{
+    height: 700px;
+    width: 100%;
+}
+.sec-one-content{
+    height: 700px;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.sec-one-content p{
+    text-align: center;
+}
+.sec-one-content h2{
+    font-weight: bolder;
+}
+.sec-one-card-group{
+    display: flex;
+    height: 300px;
+    width: 100%;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.sec-one-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    width: 33.33%;
+    background-color: rgba(0, 0, 0, 0.448);
+    background-blend-mode: multiply;
+    transition: all 1s;
+    padding-bottom: 50px;
+    
+    
+}
+.sec-one-card:hover{
+   background-color: rgba(0, 0, 0, 0);
+   transform:scale(1.09);
+   box-shadow: 15px 20px 20px rgb(127, 127, 127);
+  
+}
+
+
+.sec-one-card h3{
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+.sec-one-card p{
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+}
+.sec-one-card-group .one{
+    background-image: url(./images/jeroen-van-de-water-aQOzmgcT6sI-unsplash.jpg);
+    background-size: 100% 100%;
+   
+}
+.sec-one-card-group .two{
+    background-image: url(./images/american-public-power-association-XGAZzyLzn18-unsplash.jpg);
+    background-size: 100% 100%;
+   
+}
+.sec-one-card-group .three{
+    background-image: url(./images/andreas-gucklhorn-Ilpf2eUPpUE-unsplash.jpg);
+    background-size: 100% 100%;
+   
+}
+.sec-one-card-group .four{
+    background-image: url(./images/solar\ pump.jpg);
+    background-size: 100% 100%;
+   
+}
+/* sec-one ends */
+/* sec-two */
+.sec-two{
+    height: fit-content;
+    width: 100%;
+    background-color: aliceblue;
+}
+.section-two-content{
+    height: fit-content;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    /* border: 2px solid red; */
+    gap: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid rgb(19, 19, 81);
+}
+.section-two-content h2{
+    font-size: 70px;
+    font-weight: bolder;
+}
+.section-two-content p{
+    font-size: 25px;
+    width: 90%;
+    text-align: center;
+}
+.btn{
+    width: 20%;
+    border: none;
+    height: 50px;
+    background-color: rgb(32, 32, 141);
+    color: white;
+    font-size: 29px;
+}
+
+/* sec-two ends */
+/* sec-three starts */
+.section-three{
+    height: 700px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+   
+}
+.sec-three-content{
+    height: 700px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+.sec-3-text{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   
+    
+}
+
+.sec-3-text h2{
+    font-size: 40px;
+    width: 100%;
+    font-weight: bolder;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.sec-3-text .btn{
+    width: 40%;
+    align-self: center;
+    margin-top: 150px;
+}
+.sec-three-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   color: rgb(24, 24, 78);
+   padding-left: 20px;
+   gap: 5px;
+ 
+}
+.sec-three-img{
+    background-image: url(./images/Capex-model\ img.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+}
+/* sec-three ends */
+/* sec-four starts */
+.sec-four{
+    height: 400px;
+    width: 100%;
+    background-color: #ffffff;
+}
+.sec-four-content{
+   height: 400px;
+   width: 100%; 
+   display: flex;
+   gap: 40px;
+   justify-content: center;
+   align-items: center;
+   padding-left: 50PX;
+   padding-right: 50px;
+}
+.sec-four-card{
+    background-color: rgb(255, 255, 255);
+    height: 250px;
+    border: 2px solid rgb(24, 24, 80);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 20%;
+    gap: 20px;
+}
+.sec-four-card p{
+    text-align: center;
+}
+/* sec-four -ends */
+/* sec-v starts */
+    .sec-five{
+        height: 200px;
+        width: 100%;
+        background-color: rgb(39, 39, 175);
+    }
+    .sec-five-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        width: 100%;
+        padding-left: 100px;
+        padding-right: 100px;
+      
+    }
+    .sec-five-content h2{
+        font-size: 50px;
+        font-weight: bolder;
+        color: white;
+        text-align: center;
+        width: 70%;
+    }
+
+    .sec-five-content p{
+        font-size: 20px;
+        font-weight: bolder;
+        color: white;
+        text-align: center;
+        width: 100%;
+    }
+    .sec-five-content h2 {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid rgba(20, 20, 20, 0); /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+          typing 5.5s steps(40, end),
+          blink-carets step-end ;
+          animation-delay: 5s;
+          animation-iteration-count: infinite;
+       
+      }
+      
+      /* The typing effect */
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 10% }
+      }
+      
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        20% { border-color: rgba(212, 202, 182, 0); }
+      }
+
+      
+
+/* sec-v ends */
+/* sec-six-starts */
+.sec-six{
+   height: 700px;
+   width: 100%;
+}
+.sec-six-content{
+    display: flex;
+    height: 700px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 40px;
+}
+.sec-six-content h2{
+    font-size: 50px;
+    font-weight: bolder;
+}
+.sec-six-card-group{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    gap: 40px;
+}
+.sec-six-card{
+    height: 100%;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all .5s linear;
+     border: 22px solid rgb(255, 255, 255);
+
+
+ 
+    
+}
+.industrial-card{
+    background-color: rgb(191, 196, 246);
+    color: rgb(255, 255, 255);
+}
+.sec-six-card:hover{
+  border: 22px solid rgb(32, 32, 111);
+}
+.sec-six-card p{
+    font-weight: lighter;
+    font-size: 15px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+.sec-six-card img{
+    height: 70%;
+    width: 100%;
+}
+/* sec-six-ends */
+/* sec-seven starts */
+.sec-seven{
+    height: 400px;
+    width: 100%;
+    background-color: rgb(39, 39, 175);
+}
+.sec-seven-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    padding-left: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  
+}
+.sec-seven-content h2{
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.sec-seven-content p{
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+.sec-seven-content h2 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgba(255, 166, 0, 0); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 4.5s steps(40, end),
+      blink-carets step-end ;
+      animation-delay: 1s;
+      animation-iteration-count: 7;
+   
+  }
+  
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+/* sec-seven ends */
+/* footer starts */
+  .footer{
+    height: 500px;
+    width: 100%;
+  }
+  .footer-content{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 150px;
+    padding-right: 50px;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .footer-logo{
+    height: 100% ;
+    width: 50%;
+    margin-right: 100px;
+  }
+  .footer-logo img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20%;
+    border: 1px solid blue;
+  }
+  .footer-part{
+    height: 200px;
+        width: 33.33%;
+  }
+  .footer-social{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    
+  }
+  .footer-social i{
+    font-size: 20px;
+  }
+  .footer-address{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+/* footer ends */
+@media (max-width:575.98px){
+    .toggle{
+        visibility: visible;
+    }
+    .nav{
+        height: auto;
+        position: absolute;
+        top: 0px;
+        z-index: 2;
+        background-color: white;
+        box-shadow: 10px 10px 20px rgb(80, 79, 79);
+    }
+    .nav-content{
+        height: fit-content;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-right: 0px;
+        gap: 10px;
+    }
+    .nav-content img{
+        height: 100px;
+        width: 100px;
+    }
+    .nav-bar{
+        height: fit-content;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    /* nav -ends */
+    /* banner starts */
+        .banner{
+            height: auto;
+        }
+        .banner-content{
+            height: fit-content;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            flex-direction: column-reverse;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        .banner-main{
+            position: static !important;
+            width: 100% !important;
+        }
+        .banner-content h1{
+            font-size: 30px;
+            width: 100%;
+            padding-right: 0px;
+            line-height: 50px;
+            padding-top: 50px;
+            text-align: center;
+        }
+    /* banner ends */
+    /* sec-one starts */
+    .sec-one{
+        height: auto;
+    }
+    .sec-one-content{
+        padding-top: 50px;
+        padding-right: 5px;
+        padding-left: 5px;
+        height: fit-content;
+        padding-bottom: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sec-one-content h2{
+        text-align: center;
+    }
+    .sec-one-card-group{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .sec-one-card{
+        height: 400px !important;
+        width: 80%;
+        padding: 5px;
+    }
+    /* sec-one ends */
+    /* sec-two */
+        .sec-two{
+            height: auto;
+        }
+        .section-two-content{
+            height: fit-content;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            align-items: center;
+        }
+        .section-two-content h2{
+            font-size: 30px;
+        }
+        .section-two-content p{
+            font-size: 20px;
+        }
+        .section-two-content .btn{
+            width: 50%;
+        }
+    /* sec-two ends */
+    /* sec-3starts */
+    .section-three{
+        height: auto;
+    }
+    .sec-three-content{
+        height: fit-content;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        flex-direction: column-reverse;
+        padding-left: 15px;
+        padding-right: 5px;
+    }
+    .sec-3-text{
+        height: fit-content;
+        align-items: center;
+        width: 100%;
+    }
+    .sec-3-text .btn{
+        margin-top: 50px;
+        width: 80%;
+    }
+    .sec-3-text h2{
+        text-align: center;
+    }
+    .sec-three-img{
+        height: 500px;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        background-size: 100% 100%;
+    }
+    
+    /* sec-3 -ends */
+    /* sec-four */
+    .sec-four{
+        height: auto;
+    }
+    .sec-four-content{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: fit-content;
+        flex-direction: column;
+    }
+    .sec-four-card{
+        width: 80%;
+    }
+    
+    /* sec-four ends/ */
+    /* sec-v-starts */
+    .sec-five{
+        height: auto;
+    }
+    .sec-five-content{
+        height: fit-content;
+        padding-left: 15px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        gap: 10px;
+        align-items: center;
+        padding-right: 15px;
+    }
+    .sec-five-content h2{
+        font-size: 15px;
+        width: 100%;
+        text-align: center;
+    }
+    .sec-five-content p{
+        font-size: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+      
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: orange; }
+      }
+    /* sec-v-ends */
+    /* sec-six-starts */
+    .sec-six{
+        height: auto;
+    }
+    .sec-six-content{
+        padding-top: 50px;
+        height: fit-content;
+        padding-bottom: 50px;
+        padding-left: 5px;
+        padding-right: 5px;
+        align-items: center;
+
+    }
+    .sec-six-content h2{
+        font-size: 30px;
+        text-align: center;
+    }
+    .sec-six-card-group{
+        height: fit-content;
+        flex-direction: column;
+        width: 100%;
+    }
+    .sec-six-card {
+        height: 400px;
+        width: 100%;
+        align-items: center;
+    }
+    .sec-six-card h3{
+        text-align: center;
+    }
+    .sec-six-card p{
+        text-align: center;
+    }
+    /* sec-six-ends */
+    /* sec-seven */
+    .sec-seven{
+        height: auto;
+    }
+    .sec-seven-content{
+        height: fit-content;
+        padding-left: 15px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        gap: 10px;
+    }
+    .sec-seven-content h2{
+        font-size: 10px;
+        width: 100%;
+    }
+    .sec-seven-content p{
+        font-size: 10px;
+        width: 100%;
+    }
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+      
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: orange; }
+      }
+
+    /* footer */
+    .footer{
+        height: auto;
+    }
+    .footer-content{
+        height: fit-content;
+        flex-direction: column;
+        padding-left: 5px;
+        padding-right: 5px;
+        align-items: center;
+    }
+    .footer-part{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-logo{
+        margin-right: 0px;
+    }
+    .footer-part p{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
