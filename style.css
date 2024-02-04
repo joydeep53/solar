@@ -3,7 +3,17 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+   
 
+}
+.icon-text{
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: black;
+   
+    text-decoration:line-through
+    
 }
 .btn a{
     text-decoration: none;
@@ -562,13 +572,14 @@
 @media (max-width:575.98px){
     .toggle{
         visibility: visible;
+        font-size: 30px;
     }
     .btn{
         font-size: 15px;
     }
     .nav{
         height: auto;
-        position: absolute;
+        position: fixed;
         top: 0px;
         z-index: 2;
         background-color: white;
@@ -576,8 +587,8 @@
     }
     .nav-content{
         height: fit-content;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -585,8 +596,8 @@
         gap: 10px;
     }
     .nav-content img{
-        height: 100px;
-        width: 100px;
+        height: 25px;
+        width: 25px;
     }
     .nav-bar{
         height: fit-content;
@@ -595,6 +606,7 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
+        transition: none;
     }
     /* nav -ends */
     /* banner starts */
@@ -603,7 +615,7 @@
         }
         .banner-content{
             height: fit-content;
-            padding-top: 50px;
+            padding-top: 0px;
             padding-bottom: 50px;
             flex-direction: column-reverse;
             padding-left: 0px;
@@ -682,7 +694,7 @@
         padding-top: 50px;
         padding-bottom: 50px;
         flex-direction: column-reverse;
-        padding-left: 15px;
+        padding-left: 5px;
         padding-right: 5px;
     }
     .sec-3-text{
