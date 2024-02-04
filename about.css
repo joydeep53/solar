@@ -71,7 +71,40 @@ h2 span{
     from, to { border-color: transparent }
     50% { border-color: orange; }
   }
+/* PROJECTS */
 
+.projects{
+    height: auto;
+    width: 100%;
+    background-color: rgb(20, 39, 56);
+}
+.projects-content{
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 150px 100px 150px;
+}
+.projects-content h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+.project-row{
+    display: flex;
+    height: 400px;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.project-row img{
+    height: 80%;
+    width: 33.33%;
+}
 @media(max-width:575.98px){
     .about{
         height: auto;
@@ -92,5 +125,25 @@ h2 span{
     .btn{
         font-size: 15px;
         width: 50%;
+    }
+    .projects{
+        height: auto;
+    }
+    .projects-content{
+        height: fit-content;
+        padding-left: 15px;
+        padding-right: 15px;
+        gap: 20px;
+    }
+    .project-row{
+        height: fit-content;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+
+    }
+    .project-row img{
+        min-width: 100%;
+        
     }
 }
