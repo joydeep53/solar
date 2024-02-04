@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>k2 international group</title>
+    
+    <!-- bootsrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--  -->
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+
+
+</head>
+<body>
+     <!-- nav starts  -->
+     <nav class="nav">
+            
+        <div class="nav-content">
+            <img src="./images/logo.jpg" alt="">
+            <ul class="nav-bar">
+                <li class="nav-links">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-links">
+                    <a href="about.html">About us <i class="fa-solid fa-caret-down"></i></a>
+                </li>
+                <li class="nav-links">
+                    <a href="service.html">Service <i class="fa-solid fa-caret-down"></i></a>
+                </li>
+                <li class="nav-links">
+                    <a href="product.html">Solar Product</a>
+                </li>
+                <li class="nav-links">
+                    <a href="#footer">Contact <i class="fa-solid fa-caret-down"></i></a>
+                </li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars toggle"></i>
+    
+</nav>
+
+<!-- about -->
+<section class="about">
+        <div class="about-us-content">
+            <h2>WHO
+                ARE <span> WE?</span></h2>
+            <img src="./images/logo.jpg" alt="" srcset="" data-aos="zoom-in">
+            <p> <span>K2 INTERNATIONAL GROUPS</span>  SOLAR is a
+                West Bengal based solar company in
+                India, specialises in high efficiency solar
+                energy solutions, including installation,
+                supply and comprehensive (EPC)
+                solutions. We are a leading provider of
+                cutting-edge solar components for the
+                residential and commercial, Govt.
+                sectors, including solar panels, solar
+                inverters, solar batteries, complete solar
+                COMBOs, solar water heaters, solar
+                pumps, and solar street lights, solar small
+                products etc.
+                </p>
+                <button class="btn"><a href="product.html" data-aos="fade-up">see our products</a></button>
+                <button class="btn"><a href="service.html" data-aos="fade-up">see our services</a></button>
+        </div>
+
+</section>
+<footer class="footer" id="footer">
+    <div class="footer-content">
+       <div class="footer-logo">
+          <img src="./images/logo white.jpg" alt="" srcset="">
+       </div>
+       <div class="footer-part footer-address">
+          <h3>Address</h3>
+          <p>J.N.Roy lane, Roypara, Golapbagan, Krishnagar, Nadia, pin:- 741101</p>
+
+       </div>
+       <div class="footer-part">
+          <h3>Call</h3>
+          <a href="tel:+919734564707">
+            <p>+91 9734564707</p>
+          </a>
+          <h3>Email</h3>
+          <a href="mailto:k2internationalgroup@gmail.com"><p>k2internationalgroups@gmail.com</p></a>
+       </div>
+       <div class="footer-part footer-social">
+          <a href="">
+            <i class="fa-brands fa-facebook"></i> facebook
+          </a>
+          <a href="https://wa.me/919734564707">
+            <i class="fa-brands fa-whatsapp"></i> Whatsapp
+          </a>
+          <a href="">
+            <i class="fa-brands fa-twitter"></i> Twitter
+          </a>
+         
+       </div>
+    </div>
+</footer>
+    
+<script>
+     
+    $(document).ready(function(){
+      let docWidth = $(document).width()
+           console.log(docWidth)
+           if(docWidth>1199.98){
+            $('.nav-bar').slideDown()
+           }
+           else{
+            $('.nav-bar').slideUp()
+
+           }
+    
+      $('.toggle').click(function(){
+        $('.nav-bar').slideToggle()
+
+    })})
+
+    $(document).ready(function(){
+     
+      $('.one p').slideUp()
+      $('.one').hover(function(){
+        $('.one p').slideToggle()
+      })
+
+
+      $('.two p').slideUp()
+      $('.two').hover(function(){
+        $('.two p').slideToggle()
+      })
+     
+      $('.three p').slideUp()
+      $('.three').hover(function(){
+        $('.three p').slideToggle()
+      })
+      $('.four p').slideUp()
+      $('.four').hover(function(){
+        $('.four p').slideToggle()
+      })
+    
+    })
+ 
+         AOS.init();
+
+  
+ 
+      
+  
+
+    
+
+
+  
+
+</script>
+</body>
+</html>

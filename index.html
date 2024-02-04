@@ -34,10 +34,10 @@
                     <img src="./images/logo.jpg" alt="">
                     <ul class="nav-bar">
                         <li class="nav-links">
-                            <a href="">Home</a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li class="nav-links">
-                            <a href="">About us <i class="fa-solid fa-caret-down"></i></a>
+                            <a href="about.html">About us <i class="fa-solid fa-caret-down"></i></a>
                         </li>
                         <li class="nav-links">
                             <a href="service.html">Service <i class="fa-solid fa-caret-down"></i></a>
@@ -46,7 +46,7 @@
                             <a href="product.html">Solar Product</a>
                         </li>
                         <li class="nav-links">
-                            <a href="contact.html">Support <i class="fa-solid fa-caret-down"></i></a>
+                            <a href="#footer">Contact <i class="fa-solid fa-caret-down"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -118,19 +118,38 @@
                   <div class="sec-one-card-group">
                     <div class="sec-one-card one" data-aos="fade-up">
                       <h3>Residential Rooftop</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis fugiat ipsum cum, perferendis delectus earum officia aut perspiciatis harum similique sequi at quo temporibus itaque accusamus aspernatur molestias sed ab?</p>
+                      <p>A rooftop solar system is a solar power generation setup installed on the roof of a building or structure. This type of solar system harnesses sunlight to generate electricity, providing a sustainable and renewable energy source. Here are key components and aspects associated with rooftop solar systems:</p>
                     </div>
                     <div class="sec-one-card two"data-aos="fade-up">
                       <h3>Solar Street Light</h3>
-                      <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis fugiat ipsum cum, perferendis delectus earum officia aut perspiciatis harum similique sequi at quo temporibus itaque accusamus aspernatur molestias sed ab?</p>
+                      <p >Solar Street light is a lighting system composed of a
+                        solar panel, lighting xture, inbuilt solar battery and
+                        a pole. Solar street lights raised our lighting
+                        sources which are powered by solar panel. The
+                        solar panel charge a solar battery which provide
+                        power to solar LED light during nights. Mostly, a
+                       
+                        </p>
                     </div>
                     <div class="sec-one-card three" data-aos="fade-up">
                       <h3>Solar Tree</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis fugiat ipsum cum, perferendis delectus earum officia aut perspiciatis harum similique sequi at quo temporibus itaque accusamus aspernatur molestias sed ab?</p>
+                      <p>A solar tree is basically a construction like a
+                        tree made up of solar panels which absorb solar
+                        energy during the daytime and convert it into
+                        electrical energy which can be stored in
+                        batteries. The tree also consists of LEDs which
+                        are activated at dusk till dawn or as long as the
+                        batteries remain charged</p>
                     </div>
                     <div class="sec-one-card four"data-aos="fade-up">
                       <h3>Solar Pump</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis fugiat ipsum cum, perferendis delectus earum officia aut perspiciatis harum similique sequi at quo temporibus itaque accusamus aspernatur molestias sed ab?</p>
+                      <p>A new technological advancement has taken
+                        shape in a small village in India. A solar
+                        powered water well and storage system is up
+                        and running.
+                        It is a smart multistage water puri er which
+                        provides 24x7 puri ed water for high use
+                        establishments</p>
                     </div>
                   </div>
 
@@ -146,12 +165,14 @@
                   <p>
                      k2 international offers affordable solar solutions  Being a solar EPC company we provide end to end solution including:
                      .</p>
-                    <button class="btn">CAPITAL EXPENDITURE</button>
+                    
+                      <button class="btn"><a href="service.html">SEE OUR SERVICE</a></button>
+                    
                     
                </div>
             </section>
           <!-- sec-two ends -->
-         <section class="sec-three">
+         <section class="sec-three" id="sec-three">
             <div class="sec-three-content">
               <div class="sec-3-text">
                 <h2>SOLAR EPC SOLUTION</h2>
@@ -254,7 +275,7 @@
          <!-- sec-seven ends -->
     </main>
     <!-- footer starts -->
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer-content">
            <div class="footer-logo">
               <img src="./images/logo white.jpg" alt="" srcset="">
@@ -290,7 +311,17 @@
     <script>
      
         $(document).ready(function(){
-        
+          // doc width 
+           let docWidth = $(document).width()
+           console.log(docWidth)
+           if(docWidth>1199.98){
+            $('.nav-bar').slideDown()
+           }
+           else{
+            $('.nav-bar').slideUp()
+
+           }
+          // 
           $('.toggle').click(function(){
             $('.nav-bar').slideToggle()
 

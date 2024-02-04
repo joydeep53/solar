@@ -37,7 +37,7 @@
                     <a href="index.html">Home</a>
                 </li>
                 <li class="nav-links">
-                    <a href="">About us <i class="fa-solid fa-caret-down"></i></a>
+                    <a href="about.html">About us <i class="fa-solid fa-caret-down"></i></a>
                 </li>
                 <li class="nav-links">
                     <a href="service.html">Service <i class="fa-solid fa-caret-down"></i></a>
@@ -46,7 +46,7 @@
                     <a href="product.html">Solar Product</a>
                 </li>
                 <li class="nav-links">
-                    <a href="contact.html">Support <i class="fa-solid fa-caret-down"></i></a>
+                    <a href="#footer">Contact <i class="fa-solid fa-caret-down"></i></a>
                 </li>
             </ul>
         </div>
@@ -59,11 +59,11 @@
     <div class="product-content">
             <h2>Our Products</h2>
             <div class="product-group tree">
-                <div class="product-img">
+                <div class="product-img" data-aos="fade-up">
 
                 </div>
                 <div class="product-details">
-                    <h3>Solar Power Tree is a structure that is designed like
+                    <h3 data-aos="fade-up">Solar Power Tree is a structure that is designed like
                         a tree with branches made of steel to hold the
                         photovoltaic panels.</h3>
                     <p>
@@ -90,12 +90,12 @@ solar panels joint together.
             </div>
 
 
-            <div class="product-group pump">
-                <div class="product-img">
+            <div class="product-group pump" >
+                <div class="product-img" data-aos="fade-up">
 
                 </div>
                 <div class="product-details">
-                    <h3>A new technological advancement has taken
+                    <h3 data-aos="fade-up">A new technological advancement has taken
                         shape in a small village in India. A solar
                         powered water well and storage system is up
                         and running.
@@ -118,10 +118,10 @@ solar panels joint together.
 
 
             <div class="product-group street-light">
-                <div class="product-img">
+                <div class="product-img" data-aos="fade-up">
 
                 </div>
-                <div class="product-details">
+                <div class="product-details" data-aos="fade-up">
                     <h3>A solar street light is used for many purpose in
                         present day. It is using to illuminating streets in
                         rural as well as urban areas without electricity grid.
@@ -147,7 +147,7 @@ solar panels joint together.
 
 
             <div class="product-group high-must">
-                <div class="product-img">
+                <div class="product-img" data-aos="fade-up">
 
                 </div>
                 <div class="product-details">
@@ -179,10 +179,10 @@ solar panels joint together.
 
 
             <div class="product-group water-pump">
-                <div class="product-img">
+                <div class="product-img" data-aos="fade-up">
 
                 </div>
-                <div class="product-details">
+                <div class="product-details" data-aos="fade-up">
                     <h3>A solar water pump is an innovative technology water lifting
                         system that is powered by solar energy
                         
@@ -201,7 +201,7 @@ solar panels joint together.
         
     </div>
 </section>
-<footer class="footer">
+<footer class="footer" id="footer">
     <div class="footer-content">
        <div class="footer-logo">
           <img src="./images/logo white.jpg" alt="" srcset="">
@@ -237,6 +237,16 @@ solar panels joint together.
 <script>
      
     $(document).ready(function(){
+
+        let docWidth = $(document).width()
+           console.log(docWidth)
+           if(docWidth>1199.98){
+            $('.nav-bar').slideDown()
+           }
+           else{
+            $('.nav-bar').slideUp()
+
+           }
     
       $('.toggle').click(function(){
         $('.nav-bar').slideToggle()

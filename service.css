@@ -1,0 +1,127 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+.services{
+    height: auto;
+}
+.service-content{
+    height: fit-content;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(11, 13, 35);
+    
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-blend-mode: multiply;
+    box-shadow: 10px 10px 50px rgb(142, 142, 142);
+    
+}
+.service-content h2{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+.service-content p{
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+}
+.service-content li{
+    font-size: 10px;
+    color: white;
+    text-align: left;
+    font-weight: 400;
+}
+.service-content h3{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+}
+.service-text{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    gap: 10px;
+}
+.service-img{
+    height: 700px;
+    width: 50%;
+   
+}
+ol{
+    padding-left: 40px;
+}
+li span{
+    color: rgb(85, 255, 0);
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.service-img img{
+    height: 100%;
+    width: 100%;
+}
+
+@media(max-width:575.98px){
+    .services{
+        height: auto;
+    }
+    .service-content{
+        height: fit-content;
+        flex-direction: column;
+        padding: 250px 15px 150px 15px;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        background-image: none;
+        background-color:aliceblue;
+    }
+    .service-text{
+        height: fit-content;
+        width: 100%;
+        padding-left: 0px;
+    }
+    .service-text ol{
+        font-size: 15px;
+        padding-left: 0px;
+    }
+    .service-content li{
+        color: black;
+    }
+    .service-content h2{
+        text-align: center;
+        font-size: 20px;
+        width: 100%;
+        color: black;
+       
+    }
+    .service-content h3{
+        color: black;
+    }
+    .service-content p{
+        text-align: center;
+        font-size: 15px;
+        color: black;
+    }
+    .service-img{
+        height: 500px;
+        width: 100%;
+    }
+}

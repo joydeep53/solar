@@ -29,7 +29,8 @@
     display: flex;
     flex-direction: column;
     font-size: 50px;
-    font-weight: bold;
+    font-weight: bolder;
+
     
 }
 
@@ -94,7 +95,7 @@
         height: auto;
     }
     .product-content{
-        padding-top: 50px;
+        padding-top: 250px;
         padding-bottom: 50px;
         height: fit-content;
         align-items: center;
@@ -123,6 +124,9 @@
     .pump .product-img{
         height: 450px;
         width: 100%;
+    }
+    .product-details p{
+        font-size: 15px;
     }
     .street-light .product-img{
         height: 450px;

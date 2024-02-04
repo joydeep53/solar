@@ -1,0 +1,96 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+.about{
+    height: fit-content;
+    width: 100%;
+    background-color: aliceblue;
+}
+.about-us-content{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 100px;
+    gap: 50px;
+}
+.about-us-content h2{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+h2 span{
+    color: red;
+}
+.about-us-content img{
+    height: 300px;
+    width: 300px;
+}
+.about-us-content p{
+    text-align: center;
+    font-size: 24px;
+}
+.about-us-content p span{
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+.about-us-content h2{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgba(255, 166, 0, 0); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 4.5s steps(40, end),
+      blink-carets step-end ;
+      animation-delay: 1s;
+      animation-iteration-count: 4;
+   
+  }
+  
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+@media(max-width:575.98px){
+    .about{
+        height: auto;
+    }
+    .about-us-content{
+        height: fit-content;
+        width: 100%;
+        padding-top: 250px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .about-us-content h2{
+        font-size: 25px;
+    }
+    .about-us-content p{
+        font-size: 15px;
+    }
+    .btn{
+        font-size: 15px;
+        width: 50%;
+    }
+}
